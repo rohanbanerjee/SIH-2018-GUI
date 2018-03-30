@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="newDashboard.css">
+<link rel="stylesheet" type="text/css" href="navBar.css">
+<link rel="stylesheet" type="text/css" href="navBarMedia.css">
+<script src="navBar.js"></script>
+
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>ESDM Online</title>
+    </head>
+</head>
+<body>
+
+    <div class="topnav" id="myTopnav">
+        <a href="ESDM">B.R.A.V.E.</a>
+        <a href="#home">Home</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+        <a href="#signout">Signout</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#000;</a>
+    </div>
+
+
+    <div class="wrapper">
+        <!-- Sidebar Holder -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>Govt Portal </h3>
+                <strong><span id="1"></span></strong>
+            </div>
+            <ul class="list-unstyled components">
+                <li class="active">
+                    <a href="#homeSubmenu"  aria-expanded="false">
+                        <i class="glyphicon glyphicon-education"></i>
+                        Trainer
+                    </a>
+
+                </li>
+                <li>
+
+                    <a href="#pageSubmenu"  aria-expanded="false">
+                        <i class="glyphicon glyphicon-book"></i>
+                        Courses
+                    </a>
+
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="glyphicon glyphicon-certificate"></i>
+                        Certificate Verification
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+        <!-- Page Content Holder -->
+        <div id="content">
+            <div class="navbar-header">
+                <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
+                <i class="glyphicon glyphicon-align-left"></i>
+                </button>
+            </div>
+            <br><br>
+
+            <h2>GOVERNMENT DASHBOARD</h2>
+            
+
+
+        </div>
+    </div>
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <!-- Bootstrap Js CDN -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function () {
+    $('#sidebarCollapse').on('click', function () {
+    $('#sidebar').toggleClass('active');
+    });
+    });
+    </script>
+</body>
+</html>
